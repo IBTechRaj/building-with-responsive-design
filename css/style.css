@@ -44,7 +44,7 @@ body{
   display: block;
   opacity: 0.6;
 }
-<<<<<<< HEAD
+
 
 .dropdown-content a:hover {background-color: black;opacity: 1;}
 .dropdown:hover .dropdown-content {display: block;}
@@ -55,7 +55,7 @@ body{
     margin-left: 8px;*/
     float: left;
     display: inline;
-=======
+}
 .fa{
 	display: inline;
 }
@@ -69,7 +69,6 @@ body{
 .dropdown:hover .dropbtn {
 	background-color: black;
 	opacity: 1;
->>>>>>> 7f69dc32e9ddc998d7b9d4af84b9fae5f74d92f7
 }
 .white-nav1{
 	height: 40px;
@@ -126,8 +125,36 @@ body{
 	margin-right: 0.5%;
 	width: 65.5%;
 	height: 500px;
-	background-image: url(assets/img/left.jpg);
+	background-image: linear-gradient(to right, red, green),url(assets/img/left.jpg);
+	  background-blend-mode: overlay;
 	float: left;
+}
+.tnw{
+	font-size: 150px;
+	font-weight: 700;
+	color: white;
+}
+
+.cover-title a{
+	margin-top: 50px;
+	padding-left: 20px;
+	font-size: 48px;
+	font-weight: 900;
+	color: white;
+	text-decoration: none;
+}
+.by-text-left p{
+	margin-top: 30px;
+	margin-left: 20px;
+	color: white;
+	display: inline;
+	float: left;
+}
+.fa-clock-o, .fa-share-alt{
+	float: left;
+	color: white;
+	margin-top: 30px;
+	margin-left: 5px;
 }
 .main-body-right{
 	width: 33%;
@@ -142,6 +169,27 @@ body{
 	background-image: url(assets/img/right-top.png);
 	background-size: cover;
 }
+.insights{
+	font-size: 15px;
+	font-weight: 300;
+	padding-top: 70px;
+	padding-left: 20px;
+	color: white;
+}
+.insights-text{
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: white;
+}
+.by-text p{
+	margin-top: 10px;
+	margin-left: 20px;
+	color: white;
+	display: inline-block;
+	float: left;
+}
 .main-body-right-bottom{
 	width: 100%;
 	height: 245px;
@@ -149,4 +197,3 @@ body{
 	background-image: url(assets/img/right-bottom.jpg);
 	background-size: cover;
 }
-
