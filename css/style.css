@@ -209,6 +209,7 @@ padding-top: 5px;
 }
 .latest-bodies a{
 	width: 100%;
+	height: 50px;
 	display: flex;
 	font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 	color: black;
@@ -223,4 +224,71 @@ padding-top: 5px;
 .latest-bottom p{
 	color: grey;
 	font-size: 14px;
+}
+
+/****************************   footer  *********************/
+
+.footer-topline{
+	background-color: #131313;
+	width: 100%;
+	height: 180px;
+	text-align: center;
+
+}
+.footer-topline a{
+	color: white;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 100px;
+
+}
+
+
+.footer-bottomline{
+	text-align: center;
+	padding-top: 50px;
+
+	color: white;
+	background-color: black;
+	width: 100%;
+	height: 100px;
+}
+.footer-bottomline h5{
+	opacity: 0.6;
+}
+.icon {
+    height: 16px;
+    width: 16px;
+}
+strong {
+    background: #333;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    width: 40px;
+}
+
+.wrapper {
+    *zoom: 1;
+    margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-links-menu{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    color: white;
 }
