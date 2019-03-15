@@ -102,7 +102,6 @@ background-color: yellow;
 line-height: 15px;
 font-size: 15px;
 border-bottom: 1px solid white;
-padding-left: 14px;
 padding-top: 5px;
 }
 .main-body{
@@ -187,10 +186,11 @@ padding-top: 5px;
 }
 .latest-news{
 	clear: both;
-	width: 100%;
+	width: 90%;
 	padding: 0 5%;
 }
 .latest-news-header{
+	margin-left: 10px;
 	padding: 20px 0;
 	display: flex;
 	color: rgb(255, 151, 32);
@@ -199,7 +199,7 @@ padding-top: 5px;
 }
 .latest-bodies{
 	display: inline-block;
-	width: 21%;
+	width: 22%;
 	height: 280px;
 	margin: 10px 10px;
 }
@@ -236,24 +236,21 @@ padding-top: 5px;
 
 }
 .footer-topline a{
-	color: white;
-	float: left;
+	color: grey;
 	margin-left: 20px;
 	text-align: center;
 	text-decoration: none;
 	padding-top: 100px;
-
 }
-
-
+.footer-topline a:hover{
+	color: white;
+}
 .footer-bottomline{
 	text-align: center;
-	padding-top: 50px;
-
+	padding: 3em 0;
 	color: white;
 	background-color: black;
 	width: 100%;
-	height: 100px;
 }
 .footer-bottomline h5{
 	opacity: 0.6;
@@ -271,24 +268,147 @@ strong {
     text-align: center;
     width: 40px;
 }
-
+.footer-icons{
+	position: relative;
+	top: 40px;	
+	height: 30px;
+	width: 30%;
+	margin: 0 35%;
+}
+.footer-icons i{
+	color: white;
+	font-size: 25px;
+	margin: 10px 5px;
+	background-color: grey;
+}
+.circle{
+	width: 40px;
+	border-radius: 20px;
+	}
 .wrapper {
-    *zoom: 1;
+	position: relative;
+	top: 80px;
+	display: flex;
     margin: 0 auto;
     max-width: 1192px;
-    padding: 0 20px;
+	padding: 0 32%;
 }
+.fa-twitter{
+  	padding: 0.05em 0.07em;
+	}
+
+.fa-google-plus{
+  padding: 0.1em 0.1em;
+  }  
+
+.fa-dribbble{
+	padding: 0.1em 0.1em;
+	}
+
+.fa-pinterest{
+	padding: 0.1em 0.1em;
+	}
+
+.fa-facebook{
+  padding: 0.05em 0.3em;
+	}
+
+.fa-youtube{
+  padding: 0.25em 0.25em;
+  }
 
 ul {
+	display: flex;
 	list-style: none;
 }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
 
-.footer-links-menu{
-	margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    color: white;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .white-nav1,.white-nav2, .main-body-left, .main-body-right{
+	  width: 100%;
+  }	
+  .tnw{
+	padding-left: 15px;
+	font-size: 100px;
 }
+.cover-title a{
+	margin-top: 40px;
+	font-size: 40px;
+}
+.insights-text{
+	font-size: 25px;
+	font-weight: 700;
+  }
+  .wrapper{
+	padding: 0 20%;
+  }
+  .latest-bodies a{
+	  font-size: 12px;
+  }
+}
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.white-nav1,.white-nav2, .main-body-left, .main-body-right{
+		width: 100%;
+	}
+	.tnw{
+		padding-left: 12px;
+		font-size: 100px;
+	}
+	.cover-title a{
+		margin-top: 40px;
+		font-size: 40px;
+	}
+	.insights-text{
+		font-size: 25px;
+		font-weight: 700;
+	  }
+	  .wrapper{
+		padding: 0 20%;
+	  }
+	  .latest-bodies a{
+		font-size: 12px;
+	}
+	}
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 0px) and (max-width: 768px) {
+	.white-nav2, .main-body-left, .main-body-right, .latest-bodies{
+		width: 100%;
+	}
+	.white-nav1{
+		width: 100%;
+		margin: 0;
+		min-width: 560px;
+		overflow: hidden;
+	}
+	.tnw{
+		padding-left: 8px;
+		font-size: 50px;
+	}
+	.cover-title a{
+		margin-top: 15px;
+		font-size: 25px;
+	}
+	.insights-text{
+		font-size: 18px;
+		font-weight: 700;
+	  }
+	  .wrapper{
+		padding: 0 5%;
+	  }
+	  .latest-bodies a{
+		font-size: 12px;
+	}
+	}
