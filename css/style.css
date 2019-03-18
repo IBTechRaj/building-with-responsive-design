@@ -224,6 +224,80 @@ padding-top: 5px;
 .latest-bottom p{
 	color: grey;
 	font-size: 14px;
+	background-color: white;
+}
+/****************************   HardFork, Apps, Gear  *********************/
+.hardfork-news{
+	clear: both;
+	width: 90%;
+	padding: 0 5%;
+	float: left;
+	
+}
+.hardfork-column{
+	height: 1000px;
+	width: 30%;
+}
+
+.hardfork-news h1{
+	font-size: 35px;
+	color: red;
+}
+.hardfork{
+	
+	display: inline-block;
+	
+	height: 280px;
+	margin: 10px 10px 0 10px;
+	float: left;
+	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-368x276.jpg);
+background-repeat: no-repeat;
+}
+.hard-fork-bottom-heading{
+background-color: #FFF4F2;
+color: red;
+float: left;
+height: 100px;
+width: 68%;
+margin: 0 0 0 10px;
+clear: left;
+}
+.hfbh-subhead{
+font-size: 12px;
+font-weight: 300;
+margin: 10px 0 0 10px;
+}
+.hfbh-headline{
+	font-size: 15px;
+	font-weight: 700;
+	margin: 15px 0 0 10px;
+
+}
+.hfbh-img{
+	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/Japan-hacks-first-6-months-bitcoin-cryptocurrency-coincheck-scam.jpg);
+height: 100px;
+width: 27%;
+background-repeat: no-repeat;
+float: left;
+margin: 0 0;
+}
+.hfbh-news-details{
+	height: auto;
+	float: left;
+
+
+}
+.hfbh-news-details ul{
+width: 200px;
+float: left;
+margin: 0;
+padding: 0;
+}
+
+.hfbh-news-details li a{
+	display: block;
+	text-decoration: none;
+
 }
 
 /****************************   footer  *********************/
@@ -233,6 +307,7 @@ padding-top: 5px;
 	width: 100%;
 	height: 180px;
 	text-align: center;
+	float: left;
 
 }
 .footer-topline a{
@@ -251,6 +326,7 @@ padding-top: 5px;
 	color: white;
 	background-color: black;
 	width: 100%;
+	float: left;
 }
 .footer-bottomline h5{
 	opacity: 0.6;
