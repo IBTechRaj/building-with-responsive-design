@@ -235,31 +235,58 @@ padding-top: 5px;
 	
 }
 .hardfork-column{
-	height: 1000px;
+	display: inline-block;
+	margin: 0 1%;
+	height: 800px;
 	width: 30%;
 }
 
 .hardfork-news h1{
-	font-size: 35px;
+	font-size: 22px;
+	line-height: 60px;
 	color: red;
+	font-weight: 700;
 }
 .hardfork{
 	
 	display: inline-block;
 	
 	height: 280px;
-	margin: 10px 10px 0 10px;
 	float: left;
-	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-368x276.jpg);
-background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1),rgb(0, 0, 0,1)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-368x276.jpg);
+	background-repeat: no-repeat;
+}
+.hardfork-texts{
+	position: relative;
+	top: 50%;
+	padding-left: 5%;
+}
+.hardfork-insights{
+	font-size: 15px;
+	margin-top: 3%;
+	font-weight: 300;
+	color: white;
+}
+.hardfork-insights-text{
+	margin-top: 3%;
+	font-size: 22px;
+	font-weight: 700;
+	color: white;
+}
+.hardfork-by-text{
+	font-size: 14px;
+	display: flex;
+	margin-top: 10px;
+}
+.hardfork-by-text p{
+	color: grey;
 }
 .hard-fork-bottom-heading{
 background-color: #FFF4F2;
 color: red;
 float: left;
 height: 100px;
-width: 68%;
-margin: 0 0 0 10px;
+width: 73%;
 clear: left;
 }
 .hfbh-subhead{
@@ -277,26 +304,34 @@ margin: 10px 0 0 10px;
 	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/Japan-hacks-first-6-months-bitcoin-cryptocurrency-coincheck-scam.jpg);
 height: 100px;
 width: 27%;
+background-size: cover;
 background-repeat: no-repeat;
 float: left;
 margin: 0 0;
 }
 .hfbh-news-details{
-	height: auto;
-	float: left;
-
-
+	padding-top: 10px;
+	clear: both;
+	height: 300px;
 }
 .hfbh-news-details ul{
-width: 200px;
-float: left;
-margin: 0;
-padding: 0;
+	list-style: none;
 }
-
+.hfbh-news-details li::before{
+	content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+}
+.hfbh-news-details li{
+	margin: 10px 0;
+	padding: 5px 0;
+	border-bottom: 1px solid lightgrey;
+}
 .hfbh-news-details li a{
-	display: block;
 	text-decoration: none;
+	color: grey;
 
 }
 
@@ -393,7 +428,8 @@ strong {
   padding: 0.25em 0.25em;
   }
 
-ul {
+.wrapper ul {
+	margin: 0 auto;
 	display: flex;
 	list-style: none;
 }
@@ -403,9 +439,18 @@ ul {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .white-nav1,.white-nav2, .main-body-left, .main-body-right{
-	  width: 100%;
-  }	
+	.main-body-left{
+		width: 64.5%;
+	}
+	.latest-bodies{
+		width: 30%;
+	}
+	.latest-bodies a{
+		height: 25px;
+	}
+	.hardfork-column{
+		width: 45%;
+	}
   .tnw{
 	padding-left: 15px;
 	font-size: 100px;
@@ -432,9 +477,18 @@ ul {
   */
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	.white-nav1,.white-nav2, .main-body-left, .main-body-right{
-		width: 100%;
-	}
+		.main-body-left{
+			width: 64.5%;
+		}
+		.latest-bodies{
+			width: 30%;
+		}
+		.latest-bodies a{
+			height: 25px;
+		}
+		.hardfork-column{
+			width: 45%;
+		}
 	.tnw{
 		padding-left: 12px;
 		font-size: 100px;
@@ -459,15 +513,19 @@ ul {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
+	.white-nav1, .black-nav{
+		display: none;
+	}
+	.main-body-left{
+		height: 245px;
+		margin-bottom: 5px;
+	}
 	.white-nav2, .main-body-left, .main-body-right, .latest-bodies{
 		width: 100%;
 	}
-	.white-nav1{
-		width: 100%;
-		margin: 0;
-		min-width: 560px;
-		overflow: hidden;
+	.find-out-notice{
+		height: 40px;
 	}
 	.tnw{
 		padding-left: 8px;
@@ -483,8 +541,128 @@ ul {
 	  }
 	  .wrapper{
 		padding: 0 5%;
-	  }
+		}
+		.latest-bodies{
+			height: 80px;
+		}
 	  .latest-bodies a{
+			height: 12px;
 		font-size: 12px;
 	}
+	.latest-bodies-img{
+		width: 15%;
+		float: left;
 	}
+	.latest-bodies-text{
+		margin-left: 10px;
+		width: 75%;
+		float: left;
+	}
+	.latest-bodies img{
+		height: 75px;
+	}
+	.hardfork-column{
+		width: 100%;
+		height: 700px;
+	}
+	.footer-icons {
+    width: 80%;
+    margin: 0 10%;
+}
+.footer-icons i{
+	font-size: 20px;
+}
+.footer-topline{
+	height: 300px;
+}
+.wrapper ul{
+	display: block;
+}
+.wrapper li{
+	margin: 10px 0;
+}
+	}
+	/* less than 320 px */
+	@media (min-width: 0px) and (max-width: 320px) {
+		.white-nav1, .black-nav{
+			display: none;
+		}
+		.main-body-left{
+			height: 245px;
+			margin-bottom: 5px;
+		}
+		.white-nav2, .main-body-left, .main-body-right, .latest-bodies{
+			width: 100%;
+		}
+		.find-out-notice{
+			height: 40px;
+			font-size: 12px;
+		}
+		.tnw{
+			padding-left: 8px;
+			font-size: 40px;
+		}
+		.cover-title a{
+			margin-top: 15px;
+			font-size: 18px;
+		}
+		.insights-text{
+			font-size: 15px;
+			font-weight: 700;
+			}
+			.wrapper{
+			padding: 0 5%;
+			}
+			.latest-bodies{
+				height: 140px;
+			}
+			.latest-bodies a{
+				height: 12px;
+			font-size: 12px;
+		}
+		.latest-bodies-img{
+			width: 80%;
+			display: block;
+		}
+		.latest-bodies-text{
+			margin-left: 10px;
+			width: 80%;
+			display: block;
+		}
+		.latest-bodies img{
+			height: 75px;
+		}
+		.hardfork-column{
+			width: 100%;
+			height: 350px;
+		}
+		.hardfork-insights-text {
+			font-size: 18px;
+	}
+	.hard-fork-bottom-heading{
+		display: none;
+	}
+	.hfbh-img{
+		display: none;
+	}
+	.hfbh-news-details{
+		display: none;
+	}
+		.footer-icons {
+			width: 80%;
+			margin: 0 10%;
+	}
+	.footer-icons i{
+		font-size: 15px;
+		margin: 0;
+	}
+	.footer-topline{
+		height: 300px;
+	}
+	.wrapper ul{
+		display: block;
+	}
+	.wrapper li{
+		margin: 10px 0;
+	}
+		}
