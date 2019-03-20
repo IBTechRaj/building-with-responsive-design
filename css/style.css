@@ -226,6 +226,10 @@ padding-top: 5px;
 	font-size: 14px;
 	background-color: white;
 }
+.minor{
+	max-width: 1100px;
+	margin: 0 auto;
+}
 /****************************   HardFork, Apps, Gear  *********************/
 .hardfork-news{
 	clear: both;
@@ -301,7 +305,7 @@ margin: 10px 0 0 10px;
 
 }
 .hfbh-img{
-	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/Japan-hacks-first-6-months-bitcoin-cryptocurrency-coincheck-scam.jpg);
+	background-image: url(assets/img/crypto.jpg);
 height: 100px;
 width: 27%;
 background-size: cover;
@@ -649,8 +653,8 @@ strong {
 		display: none;
 	}
 		.footer-icons {
-			width: 80%;
-			margin: 0 10%;
+			width: 100%;
+    	margin: 0 auto;
 	}
 	.footer-icons i{
 		font-size: 15px;
