@@ -140,7 +140,8 @@ padding-top: 5px;
 .by-text{
 	font-size: 14px;
 	display: flex;
-	margin-top: 10px;
+	flex-wrap: wrap;
+	margin-top: 3px;
 }
 .by-text p{
 	color: grey;
@@ -200,12 +201,12 @@ padding-top: 5px;
 .latest-bodies{
 	display: inline-block;
 	width: 22%;
-	height: 280px;
+	height: auto;
 	margin: 10px 10px;
 }
 .latest-bodies img{
 	width: 100%;
-	height: 180px;
+	height: auto;
 }
 .latest-bodies a{
 	width: 100%;
@@ -254,11 +255,12 @@ padding-top: 5px;
 .hardfork{
 	
 	display: inline-block;
-	
+	background-size: 100% 100%;
 	height: 280px;
 	float: left;
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1),rgb(0, 0, 0,1)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-368x276.jpg);
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1),rgb(0, 0, 0,1)), url(assets/img/latest2.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .hardfork-texts{
 	position: relative;
@@ -387,8 +389,8 @@ strong {
 	position: relative;
 	top: 40px;	
 	height: 30px;
-	width: 30%;
-	margin: 0 35%;
+	width: 36%;
+	margin: 0 32%;
 }
 .footer-icons i{
 	color: white;
@@ -547,23 +549,30 @@ strong {
 		padding: 0 5%;
 		}
 		.latest-bodies{
-			height: 80px;
+			height: auto;
 		}
 	  .latest-bodies a{
-			height: 12px;
+			height: auto;
 		font-size: 12px;
+		margin: 0;
 	}
 	.latest-bodies-img{
-		width: 15%;
+		width: 30%;
 		float: left;
 	}
 	.latest-bodies-text{
 		margin-left: 10px;
-		width: 75%;
+		width: 65%;
 		float: left;
 	}
 	.latest-bodies img{
-		height: 75px;
+		height: auto;
+		width: 100%:
+	}
+	.hardfork{
+		width: 100%;
+		height: 400px;
+		background-size: 100% 100%;
 	}
 	.hardfork-column{
 		width: 100%;
@@ -618,23 +627,30 @@ strong {
 			padding: 0 5%;
 			}
 			.latest-bodies{
-				height: 140px;
+				height: auto;
 			}
 			.latest-bodies a{
-				height: 12px;
+				height: auto;
 			font-size: 12px;
+			margin: 0;
 		}
 		.latest-bodies-img{
 			width: 80%;
 			display: block;
 		}
 		.latest-bodies-text{
-			margin-left: 10px;
-			width: 80%;
+			margin-left: 0;
+			margin-top: 5px;
+			width: 90%;
 			display: block;
 		}
 		.latest-bodies img{
-			height: 75px;
+			width: 100%:
+			height: auto;
+		}
+		.hardfork-texts{
+			position: relative;
+			top: 30%;
 		}
 		.hardfork-column{
 			width: 100%;
